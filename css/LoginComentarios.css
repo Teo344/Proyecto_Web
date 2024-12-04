@@ -1,58 +1,79 @@
 body {
-    background-image: url('bg.jpg');
+    background-image: url('');
     background-size: cover;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    height: 100vh;
+    margin: 0;
 }
 
 .login-container {
     background-color: white;
-    padding: 20px;
-    width: 400px;
-    height: 570px;
+    padding: 30px 20px;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+}
+
+.login-container i {
+    font-size: 70px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
-}
-
-.login-form label {
-    text-align: left;
-    margin-bottom: 9px;
-    font-size: 14px;
+    align-items: center;
 }
 
 .login-form input {
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     margin-bottom: 15px;
-    font-size: 14px;
-    border: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     outline: none;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #ff860d;
+    box-shadow: 0 0 5px rgba(255, 134, 13, 0.8);
 }
 
 .checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    width: 100%;
+    justify-content: start;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .checkbox input {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 button {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,134,13,1) 35%,
-    rgba(138,136,29,0.896796218487395) 100%);
-    padding: 10px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,134,13,1) 35%, rgba(138,136,29,0.9) 100%);
+    padding: 12px 20px;
     color: white;
-    font-size: 16px;
-    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,134,13,1) 50%, rgba(138,136,29,1) 100%);
 }
