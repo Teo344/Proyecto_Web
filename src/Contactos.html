@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Contacto - Restaurante</title>
+    <style>
+        body {
+            font-family: "Libre Baskerville", serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .social-links a i {
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .fa-facebook {
+            color: #3b5998;
+        }
+        .fa-facebook:hover {
+            color: #2d4373;
+        }
+        .fa-instagram {
+            color: #e1306c;
+        }
+        .fa-instagram:hover {
+            color: #c13584;
+        }
+        .fa-twitter {
+            color: #1da1f2;
+        }
+        .fa-twitter:hover {
+            color: #0a95dd;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            overflow-x: auto; /* Scroll horizontal en dispositivos pequeños */
+        }
+        
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        th {
+            background-color: #f15a29;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        
+        tr:hover {
+            background-color: #fce4d6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurante Doña Elvita</h1>
+        <p>50 años de tradición</p>
+    </header>
+
+    <main class="container">
+        <!-- Sección de Mapa -->
+        <section>
+            <h2>Encuéntranos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-78.5!3d-0.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1ses!2sec!4v1234567890123" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Sección de Información -->
+        <section>
+            <h2>Información de Contacto</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Información</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Teléfono</td>
+                        <td>+593 2 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Celular</td>
+                        <td>+593 9 876 5432</td>
+                    </tr>
+                    <tr>
+                        <td>Ubicación</td>
+                        <td>Avenida Ficticia N° 123, Quito, Ecuador</td>
+                    </tr>
+                    <tr>
+                        <td>Horario</td>
+                        <td>Lunes a Domingo: 9:00 AM - 8:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Redes Sociales -->
+        <section>
+            <h2>Síguenos en Redes Sociales</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante Doña Elvita. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
