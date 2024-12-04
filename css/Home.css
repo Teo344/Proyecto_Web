@@ -5,11 +5,14 @@
 }
 
 header{
-    background-color: bisque;
+    background-color: antiquewhite;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 5px 10%;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
 
 }
 
@@ -18,10 +21,6 @@ header{
     margin-right: auto;
 }
 
-.punto{
-    background-color: aliceblue;
-    border-radius: 50px;
-}
 
 .logo img{
     width: 60px;
@@ -45,7 +44,7 @@ header{
 }
 
 .navLogo a{
-    font-size: 700;
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -69,6 +68,7 @@ header{
     background-image: url(../img/Banner.jpeg);
     background-size: cover; /* Ajustar imagen al tamaño del banner */
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
     opacity: 40%;
@@ -176,5 +176,81 @@ footer{
     background-color: #000000;
     width: 100%;
     padding: 5%;
+    columns: 4;
+    color: white;
+}
+
+.iconos{
+    color: white;
+}
+
+.RedesSociales img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.RedesSociales i{
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.RedesSociales i:hover{
+    transform: scale(1.1);
+    color: #FFB40F;
+}
+
+.navFooter{
+    margin-top: 40px;
+}
+.navFooter ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navFooter ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.navFooter ul a li{
+    margin-bottom: 12px;
+    transition: all 0.3s;   
+}
+
+.navFooter ul a li:hover{
+    color: #FFB40F;
+}
+
+.About{
+    margin-top: 60px;
+}
+
+.About i{
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.About article{
+    margin-left: -150px;
     text-align: center;
+}
+
+.About a{
+    margin-top: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.About a:hover{
+    color: #FFB40F;
+}
+
+
+
+.About p{
+    margin-bottom: 10px;
 }

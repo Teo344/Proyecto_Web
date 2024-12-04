@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="login-container">
-        <i class="fa-solid fa-user"></i>
+    <div class="main-container">
+        <div class="image-section">
+            <img src="../img/loginImg.jpg" alt="Background" />
+        </div>
+        <div class="login-container">
+            <figure>
+            <img src="../img/LogoRestauranteNegro.png" width="150" height="150">
+            </figure>
 
-        <form class="login-form">
-        <input type="text" id="user-id" name="user-id" placeholder="User ID">
-        
-        <input type="password" id="password" name="password" placeholder="Password">
-
-            <button type="submit">
-                <a href="inventario.html">Login</a>
-            </button>
-        </form>
+            <form class="login-form">
+                <label for="user-id">Usuario</label>
+                <input type="text" id="user-id" name="user-id" placeholder="Username">
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
