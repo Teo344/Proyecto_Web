@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://png.pngtree.com/background/20230616/original/pngtree-mexican-food-and-tacos-piled-on-board-picture-image_3625823.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    align-items: center;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.photo-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.restaurant-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #fff;
+    animation: spin 4s infinite linear;
+}
+
+.animation-text {
+    display: flex;
+    gap: 0.2rem;
+    position: absolute;
+    top: 110%;
+    animation: fade-in-text 5s forwards;
+}
+
+.animation-text span {
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: fade-letter 1s ease-in-out forwards;
+}
+
+.animation-text span:nth-child(1) { animation-delay: 0s; }
+.animation-text span:nth-child(2) { animation-delay: 0.1s; }
+.animation-text span:nth-child(3) { animation-delay: 0.2s; }
+/* ... Repite con incrementos de 0.1s hasta el último span */
+
+@keyframes fade-in-text {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-letter {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.mission-section, .vision-section, .recognitions-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ffcc00;
+}
+
+p, ul {
+    text-align: justify;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
