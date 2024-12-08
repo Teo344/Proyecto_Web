@@ -1,17 +1,18 @@
+/* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4E0AF;
-    color: #333;
-}       
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #F9C0AB;
+    padding: 10px 20px;
+    background-color: #ABCD89; /* Verde claro */
     color: white;
 }
 
@@ -19,130 +20,155 @@ header .logo img {
     height: 50px;
 }
 
-header nav ul {
-    display: flex;
+header .navLogo {
     list-style: none;
+    display: flex;
     gap: 20px;
-    margin: 0;
     padding: 0;
 }
 
-header nav ul li a {
+header .navLogo li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 
-header .btmListaComentarios {
-    padding: 10px 20px;
-    background-color: #ABCD89;
+.btmListaComentarios {
+    background-color: #F9C0AB; /* Rosa */
     border: none;
+    padding: 10px 20px;
+    color: white;
     border-radius: 5px;
-    color: white;
     cursor: pointer;
+    font-weight: bold;
 }
 
-header .btmListaComentarios:hover {
-    background-color: #98b77b;
+.btmListaComentarios:hover {
+    background-color: #F4E0AF; /* Amarillo claro */
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #000000;
-    width: 100%;
-    padding: 5%;
-    columns: 4;
+    background-color: #ABCD89; /* Verde claro */
     color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.iconos {
-    color: white;
+footer .RedesSociales {
+    text-align: center;
 }
 
-.RedesSociales {
-    margin-bottom: 5em;
-}
-
-.RedesSociales img {
-    height: 120px;
-    width: 120px;
+footer .RedesSociales img {
+    width: 100px;
     margin-bottom: 10px;
-    margin-left: 20px;
 }
 
-.RedesSociales i {
-    margin-left: 10px;
+footer .RedesSociales i {
+    margin: 0 10px;
+    color: white;
     transition: all 0.3s;
 }
 
-.RedesSociales i:hover {
-    transform: scale(1.1);
-    color: #FFB40F;
-}
-
-.navFooter {
-    margin-top: 40px;
-    margin-bottom: 7em;
+footer .RedesSociales i:hover {
+    color: #F9C0AB; /* Rosa */
 }
 
 .navFooter ul {
     list-style: none;
-    margin-top: 20px;
+    padding: 0;
 }
 
-.navFooter ul a {
-    text-decoration: none;
-    color: white;
-}
-
-.navFooter ul a li {
-    margin-bottom: 12px;
-    transition: all 0.3s;   
-}
-
-.navFooter ul a li:hover {
-    color: #FFB40F;
-}
-
-.About {
-    margin-top: 50px;
-}
-
-.About i {
-    margin-left: 15%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.About article {
-    margin-left: -150px;
-    text-align: center;
-}
-
-.About a {
-    margin-top: 30px;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.About a:hover {
-    color: #FFB40F;
-}
-
-.About p {
+.navFooter ul li {
     margin-bottom: 10px;
 }
 
-.main-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.navFooter ul li:hover {
+    color: #F4E0AF; /* Amarillo claro */
 }
 
-.comment-form-section h2,
-.comments-section h2 {
-    color: #ABCD89;
+.About {
+    text-align: center;
 }
+
+.About h3 {
+    color: #F9C0AB; /* Rosa */
+}
+
+/* Comments Section */
+.comments-section {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #F4E0AF; /* Amarillo claro */
+}
+
+.comment {
+    background-color: #FFFFFF; /* Blanco para resaltar */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.comment-header .user-info .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #F9C0AB; /* Rosa */
+}
+
+.comment-header .user-details h3 {
+    margin: 0;
+    color: #333;
+}
+
+.comment-header .user-details .user-stats {
+    font-size: 14px;
+    color: #777;
+}
+
+.comment-header .rating .stars {
+    color: #F9C0AB; /* Rosa */
+    font-weight: bold;
+}
+
+.comment-body h4 {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.comment-body p {
+    color: #555;
+}
+
+.comment-footer {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.comment-footer p {
+    color: #777;
+}
+
+/* Prevent Horizontal Scroll */
+html, body {
+    overflow-x: hidden;
+}
+

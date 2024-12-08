@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios - Restaurante Mexicano</title>
-    <link rel="stylesheet" href="../css/Comentarios.css">
+    <title>Comentarios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Comentarios.css">
 </head>
 <body>
-
+    <!-- Header -->
     <header>
         <div class="logo">
             <a href="Home.html"><img src="../img/LogoRestauranteNegro.png" alt="LogoRestauranteNegro"></a>
         </div>
-
         <nav>
             <ul class="navLogo">
                 <li><a href="Home.html">Home</a></li>
@@ -22,45 +21,55 @@
                 <li><a href="Contactos.html">Contactos</a></li>
             </ul>
         </nav>
+        <a href="LoginComentarios.html"><button class="btmListaComentarios">Comentar</button></a>
     </header>
 
-    <main class="main-container">
-        <section class="comment-form-section">
-            <h2>Deja tu comentario</h2>
-            <form class="comment-form">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre">
-                
-                <label for="comment">Comentario</label>
-                <textarea id="comment" name="comment" rows="5" placeholder="Escribe tu comentario aquí..."></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+    <section class="comments-section">
+        <div class="comment">
+            <header class="comment-header">
+                <div class="user-info">
+                    <img src="../img/user-avatar.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <h3>Daniel F</h3>
+                        <p class="user-stats">6 opiniones • 13 votos útiles</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                </div>
+            </header>
+            <article class="comment-body">
+                <h4>Sitio horrible, comida mediocre</h4>
+                <p>
+                    Demostración clara de que muchas veces las opiniones vertidas por los comentarios
+                    de los locales no se corresponden, en mi opinión, con la realidad.
+                </p>
+                <p>
+                    El sitio es feo, horrible, dentro de un soportal oscuro y que da mal rollo y desde luego
+                    nada apetecible para comer.
+                </p>
+            </article>
+            <footer class="comment-footer">
+                <div class="criteria">
+                    <p>Relación calidad-precio: ⭐⭐⭐</p>
+                    <p>Servicio: ⭐⭐⭐⭐</p>
+                    <p>Comida: ⭐⭐</p>
+                </div>
+            </footer>
+        </div>
+    </section>
 
-        <section class="comments-section">
-            <h2>Opiniones de nuestros clientes</h2>
-            <div class="comment-card">
-                <p class="comment-text">¡La comida es increíble! Definitivamente regresaré.</p>
-                <p class="comment-author">- Ana García</p>
-            </div>
-            <div class="comment-card">
-                <p class="comment-text">Excelente servicio, y el ambiente es muy acogedor.</p>
-                <p class="comment-author">- Juan Pérez</p>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
         <div class="RedesSociales">
-            <img src="../img/LogoRestauranteBlanco.png" alt="LogoRestauranteNegro">
+            <img src="../img/LogoRestauranteBlanco.png" alt="LogoRestauranteBlanco">
             <br>
             <a href="https://www.tiktok.com/@la.carreta.2.0?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok fa-2x iconos"></i></a>
             <a href="https://www.facebook.com/people/Cantina-Chingona-Carreta/61560608241454/?mibextid=kFxxJD"><i class="fa-brands fa-square-facebook fa-2x iconos"></i></a>
-            <a href="https://www.instagram.com/cantinacarreta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==    "><i class="fa-brands fa-instagram fa-2x iconos"></i></a>
+            <a href="https://www.instagram.com/cantinacarreta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram fa-2x iconos"></i></a>
         </div>  
         <section class="navFooter">
-            <h3>Navegacion</h3>
+            <h3>Navegación</h3>
             <ul>
                 <a href="Home.html"><li>Home</li></a>
                 <a href="Historia.html"><li>Historia</li></a>
@@ -70,7 +79,7 @@
         </section>
         
         <section class="navFooter">
-            <h3>Menu del Restaurante</h3>
+            <h3>Menú del Restaurante</h3>
             <ul>
                 <a href="#"><li>Plato 1</li></a>
                 <a href="#"><li>Plato 2</li></a>
@@ -82,11 +91,12 @@
             <h3>Equipo Desarrollador</h3>
             <i class="fa-solid fa-bug fa-5x"></i>
             <article>
-            <h4>InterByte</h4>
-            <p>CopyRigth @2024</p>
-            <a href="About.html">Conocernos mas</a>
+                <h4>InterByte</h4>
+                <p>Copyright @2024</p>
+                <a href="About.html">Conócenos más</a>
             </article>
         </section>
     </footer>
 </body>
 </html>
+
