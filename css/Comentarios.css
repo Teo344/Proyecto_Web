@@ -1,36 +1,94 @@
-/* General Reset */
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* Header */
+aside {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ABCD89; /* Verde claro */
-    color: white;
+    background-color: #F9C0AB;
+
 }
 
 header .logo img {
     height: 50px;
+    margin-left: 90px;
+}
+
+header nav {
+    flex: 1;
+    text-align: center;
 }
 
 header .navLogo {
     list-style: none;
-    display: flex;
+    display: inline-flex;
     gap: 20px;
+    margin: 0;
     padding: 0;
 }
 
 header .navLogo li a {
     text-decoration: none;
-    color: white;
+    color: #355F2E;
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .btmListaComentarios {
@@ -49,7 +107,7 @@ header .navLogo li a {
 
 /* Footer */
 footer {
-    background-color: #ABCD89; /* Verde claro */
+    background-color: #020202; /* Verde claro */
     color: white;
     padding: 20px;
     display: flex;
@@ -102,11 +160,11 @@ footer .RedesSociales i:hover {
 .comments-section {
     max-width: 100%;
     padding: 20px;
-    background-color: #F4E0AF; /* Amarillo claro */
+    background-color: #F4E0AF;
 }
 
 .comment {
-    background-color: #FFFFFF; /* Blanco para resaltar */
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -129,7 +187,6 @@ footer .RedesSociales i:hover {
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
-    border: 2px solid #F9C0AB; /* Rosa */
 }
 
 .comment-header .user-details h3 {
@@ -145,6 +202,12 @@ footer .RedesSociales i:hover {
 .comment-header .rating .stars {
     color: #F9C0AB; /* Rosa */
     font-weight: bold;
+}
+
+.comment-header{
+    background-color: #A8CD89; 
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .comment-body h4 {
@@ -167,8 +230,6 @@ footer .RedesSociales i:hover {
     color: #777;
 }
 
-/* Prevent Horizontal Scroll */
 html, body {
     overflow-x: hidden;
 }
-

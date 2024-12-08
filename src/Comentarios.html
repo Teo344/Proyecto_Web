@@ -6,9 +6,29 @@
     <title>Comentarios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/Comentarios.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Playwrite+HU:wght@100..400&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+HU:wght@100..400&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header -->
+    <aside>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <p>Modo Oscuro</p>
+    </aside>
+    
     <header>
         <div class="logo">
             <a href="Home.html"><img src="../img/LogoRestauranteNegro.png" alt="LogoRestauranteNegro"></a>
@@ -21,14 +41,13 @@
                 <li><a href="Contactos.html">Contactos</a></li>
             </ul>
         </nav>
-        <a href="LoginComentarios.html"><button class="btmListaComentarios">Comentar</button></a>
     </header>
 
     <section class="comments-section">
         <div class="comment">
-            <header class="comment-header">
+            <div class="comment-header">
                 <div class="user-info">
-                    <img src="../img/user-avatar.jpg" alt="User Avatar" class="avatar">
+                    <i class="fas fa-user-circle fa-3x avatar"></i>
                     <div class="user-details">
                         <h3>Daniel F</h3>
                         <p class="user-stats">6 opiniones • 13 votos útiles</p>
@@ -37,29 +56,75 @@
                 <div class="rating">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
                 </div>
-            </header>
+            </div>
             <article class="comment-body">
-                <h4>Sitio horrible, comida mediocre</h4>
+                <h4>Una experiencia increíble</h4>
                 <p>
-                    Demostración clara de que muchas veces las opiniones vertidas por los comentarios
-                    de los locales no se corresponden, en mi opinión, con la realidad.
-                </p>
-                <p>
-                    El sitio es feo, horrible, dentro de un soportal oscuro y que da mal rollo y desde luego
-                    nada apetecible para comer.
+                    Desde el ambiente hasta el servicio, todo fue excepcional. 
+                    Recomiendo especialmente el menú del chef.
                 </p>
             </article>
-            <footer class="comment-footer">
+            <section class="comment-footer">
                 <div class="criteria">
-                    <p>Relación calidad-precio: ⭐⭐⭐</p>
-                    <p>Servicio: ⭐⭐⭐⭐</p>
-                    <p>Comida: ⭐⭐</p>
+                    <p>Comida: ⭐⭐⭐⭐⭐</p>
                 </div>
-            </footer>
+            </section>
+        </div>
+
+        <div class="comment">
+            <div class="comment-header">
+                <div class="user-info">
+                    <i class="fas fa-user-circle fa-3x avatar"></i>
+                    <div class="user-details">
+                        <h3>Ana G</h3>
+                        <p class="user-stats">3 opiniones • 7 votos útiles</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <p class="stars">⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <article class="comment-body">
+                <h4>Muy buena atención</h4>
+                <p>
+                    El lugar es acogedor y la atención fue rápida. Me encantaron los postres.
+                </p>
+            </article>
+            <section class="comment-footer">
+                <div class="criteria">
+                    <p>Comida: ⭐⭐⭐⭐⭐</p>
+                </div>
+            </section>
+        </div>
+    
+        <div class="comment">
+            <div class="comment-header">
+                <div class="user-info">
+                    <i class="fas fa-user-circle fa-3x avatar"></i>
+                    <div class="user-details">
+                        <h3>Juan P</h3>
+                        <p class="user-stats">2 opiniones • 5 votos útiles</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <article class="comment-body">
+                <h4>Excelente comida</h4>
+                <p>
+                    La mejor comida que he probado en mucho tiempo. 
+                    El personal fue muy atento y el lugar estaba impecable.
+                </p>
+            </article>
+            <section class="comment-footer">
+                <div class="criteria">
+                    <p>Comida: ⭐⭐⭐⭐⭐</p>
+                </div>
+            </section>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="RedesSociales">
             <img src="../img/LogoRestauranteBlanco.png" alt="LogoRestauranteBlanco">
@@ -99,4 +164,3 @@
     </footer>
 </body>
 </html>
-
