@@ -1,22 +1,59 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f9c0ab;
     color: #000000;
     transition: background-color 0.5s, color 0.5s;
 }
-
-/* Modo oscuro usando :has() */
-body:has(#theme-toggle:checked) {
-    background-color: #121212;
+.map {
+    background-color: #f4e0af;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.contact-imformation {
+    background-color: #f4e0af;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
 }
 
-/* Estilos del aside */
+.social-media {
+    background-color: #f4e0af;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+
+body:has(#theme-toggle:checked) {
+    background-color: #441753;
+}
+
+body:has(#theme-toggle:checked) .map {
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .contact-imformation {
+    background-color: #f29f58;
+}
+body:has(#theme-toggle:checked) .social-media {
+    background-color:  #f29f58;
+}
+body:has(#theme-toggle:checked) th {
+    background-color: #441753;
+}
+
+body:has(#theme-toggle:checked) tr:hover {
+    background-color: #c8a5d4;
+}
+
+
 aside {
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 20px;
     background-color: #f4f4f4;
     padding: 10px 20px;
@@ -25,12 +62,6 @@ aside {
     transition: background-color 0.5s, color 0.5s;
 }
 
-body:has(#theme-toggle:checked) aside {
-    background-color: #333;
-    color: #f1f1f1;
-}
-
-/* Estilos del interruptor */
 .switch {
     position: relative;
     display: inline-block;
