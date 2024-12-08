@@ -27,7 +27,7 @@ aside {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s, color 0.5s;
     z-index: 5;
-    color: white;
+    color: #a8cd89;
 }
 
 .switch {
@@ -78,20 +78,124 @@ input:checked + .slider:before {
 /* Hasta aqui es el checkbox*/
 
 body:has(#theme-toggle:checked) header{
-    background-color: #3405a3;
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .navLogo a{
+    color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .navLogo li a:hover{
     color: white;
 }
 
-body:has(#theme-toggle:checked) footer {
-    background-color: #dd36cf;
-    color: black;
+body:has(#theme-toggle:checked) .btmListaComentarios{
+    background-color: #1B1833;
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .btmBanner{
+    background-color: #1B1833;
+    color: white;
 }
 
 body:has(#theme-toggle:checked) aside {
-    background-color: #dd36cf;
-    color: black;
+    background-color: #1B1833;
+    color: white;
 }
 
+
+body:has(#theme-toggle:checked) .comentarios {
+    background-color: #441752;
+}
+
+body:has(#theme-toggle:checked) .comentarios h3{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .comentarios h4{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .comentarioTarjeta{
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .textoComentarios h5{
+    color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .textoComentarios p{
+    color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .historia{
+    background-color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .textHistoria h3{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .textHistoria h4{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .textHistoria p{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .textHistoria .btmListaComentarios{
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) footer{
+    background-color: #441752;
+}
+
+body:has(#theme-toggle:checked) .RedesSociales i{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .RedesSociales i:hover{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .navFooter h3{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .navFooter a{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .navFooter a li:hover{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .About h3{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .About i{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .About article{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .About article h4{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .About article a{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .About article a:hover{
+    color: #f29f58;
+}
 
 /* Finarl*/
 
@@ -166,15 +270,15 @@ body:has(#theme-toggle:checked) aside {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.45); /* Capa negra con opacidad del 50% */
+    background-color: rgba(0, 0, 0, 0.45);
     z-index: 2;
 }
 
 .nombreBanner{
-    position: absolute; /* Posiciona encima de la imagen */
-    top: 60%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Ajustar para centrar */
+    position: absolute;
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white; 
     z-index: 3;
@@ -209,7 +313,7 @@ body:has(#theme-toggle:checked) aside {
 
 .btmBanner {
     margin-top: 20px;
-    color: white;
+    color: #a8cd89;
     border: none;
     cursor: pointer;
     border-radius: 8px;
@@ -301,7 +405,7 @@ body:has(#theme-toggle:checked) aside {
 .btmListaComentarios{
     background-color: #355F2E;
     border-radius: 4px;
-    color: #fff;
+    color: #a8cd89;
     cursor: pointer;
     padding: 15px 30px;
     font-size: 18px;
@@ -337,8 +441,8 @@ body:has(#theme-toggle:checked) aside {
 
 .imageHistoria{
     background-image: url(../img/Historia.jpeg);
-    background-size: cover; /* Ajusta la imagen al contenedor */
-    background-position: center; /* Centra la imagen */
+    background-size: cover;
+    background-position: center; 
     height: 90%;
     width: 80%;
     margin-right: 50px;
@@ -374,10 +478,10 @@ body:has(#theme-toggle:checked) aside {
 }
 
 .textoComentarios{
-font-family: "Edu AU VIC WA NT Pre", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 13px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 13px;
 }
 
 .textoComentarios h5{
