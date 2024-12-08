@@ -1,0 +1,174 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ABCD89; /* Verde claro */
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .navLogo {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+header .navLogo li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btmListaComentarios {
+    background-color: #F9C0AB; /* Rosa */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btmListaComentarios:hover {
+    background-color: #F4E0AF; /* Amarillo claro */
+}
+
+/* Footer */
+footer {
+    background-color: #ABCD89; /* Verde claro */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .RedesSociales {
+    text-align: center;
+}
+
+footer .RedesSociales img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .RedesSociales i {
+    margin: 0 10px;
+    color: white;
+    transition: all 0.3s;
+}
+
+footer .RedesSociales i:hover {
+    color: #F9C0AB; /* Rosa */
+}
+
+.navFooter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navFooter ul li {
+    margin-bottom: 10px;
+}
+
+.navFooter ul li:hover {
+    color: #F4E0AF; /* Amarillo claro */
+}
+
+.About {
+    text-align: center;
+}
+
+.About h3 {
+    color: #F9C0AB; /* Rosa */
+}
+
+/* Comments Section */
+.comments-section {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #F4E0AF; /* Amarillo claro */
+}
+
+.comment {
+    background-color: #FFFFFF; /* Blanco para resaltar */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.comment-header .user-info .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #F9C0AB; /* Rosa */
+}
+
+.comment-header .user-details h3 {
+    margin: 0;
+    color: #333;
+}
+
+.comment-header .user-details .user-stats {
+    font-size: 14px;
+    color: #777;
+}
+
+.comment-header .rating .stars {
+    color: #F9C0AB; /* Rosa */
+    font-weight: bold;
+}
+
+.comment-body h4 {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.comment-body p {
+    color: #555;
+}
+
+.comment-footer {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.comment-footer p {
+    color: #777;
+}
+
+/* Prevent Horizontal Scroll */
+html, body {
+    overflow-x: hidden;
+}
+
