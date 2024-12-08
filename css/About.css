@@ -19,7 +19,7 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: relative;
 }
 
@@ -27,7 +27,7 @@
     position: absolute;
     top: 35%;
     left: 15%;
-    transform: translate(-40%, -50%);
+    transform: translate(-40%, -120%);
     color: white;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
@@ -49,7 +49,7 @@
     display: flex; 
     position: absolute;
     gap: 60px; 
-    margin-top: -150px;
+    margin-top: -90px;
     padding: 20px;
     margin-left: 250px;
 }
@@ -202,6 +202,15 @@
     animation: colors 6s linear infinite ;
 }
 
+body:has(#theme-toggle:checked) header {
+    background-color: #3405a3;
+    color: white;
+}
+
+body:has(#theme-toggle:checked) footer {
+    background-color: #3b82f6;
+    color: black;
+}
 
 
 
