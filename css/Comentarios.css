@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4E0AF;
+    color: #333;
+}       
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F9C0AB;
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header .btmListaComentarios {
+    padding: 10px 20px;
+    background-color: #ABCD89;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+header .btmListaComentarios:hover {
+    background-color: #98b77b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    width: 100%;
+    padding: 5%;
+    columns: 4;
+    color: white;
+}
+
+.iconos {
+    color: white;
+}
+
+.RedesSociales {
+    margin-bottom: 5em;
+}
+
+.RedesSociales img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.RedesSociales i {
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.RedesSociales i:hover {
+    transform: scale(1.1);
+    color: #FFB40F;
+}
+
+.navFooter {
+    margin-top: 40px;
+    margin-bottom: 7em;
+}
+
+.navFooter ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navFooter ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.navFooter ul a li {
+    margin-bottom: 12px;
+    transition: all 0.3s;   
+}
+
+.navFooter ul a li:hover {
+    color: #FFB40F;
+}
+
+.About {
+    margin-top: 50px;
+}
+
+.About i {
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.About article {
+    margin-left: -150px;
+    text-align: center;
+}
+
+.About a {
+    margin-top: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.About a:hover {
+    color: #FFB40F;
+}
+
+.About p {
+    margin-bottom: 10px;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comment-form-section h2,
+.comments-section h2 {
+    color: #ABCD89;
+}
