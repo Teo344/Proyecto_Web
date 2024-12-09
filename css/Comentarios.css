@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 body {
     margin-top: 90px;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     background-image: url('../img/bgComentarios.jpg');
     background-size: cover;
 }
@@ -16,11 +17,11 @@ aside {
     top: 10px;
     left: 20px;
     background-color: #355F2E;
-    padding: 1px 3px; 
+    padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s, color 0.5s;
-    color: #eff1ed;
+    color: #a8cd89;
 }
 
 .switch {
@@ -83,8 +84,13 @@ header {
 }
 
 header .logo img {
-    height: 50px;
+    height: 60px;
     margin-left: 10px;
+    transition: all 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.2);
 }
 
 header nav {
@@ -106,6 +112,14 @@ header .navLogo li a {
     font-family: 'Playwrite HU', cursive;
     font-weight: bold;
     font-size: 20px;
+}
+
+header .navLogo li:hover {
+    transform: scale(1.1);
+}
+
+header .navLogo li a:hover {
+    color: #FFB40F;
 }
 
 .btmListaComentarios {
@@ -146,7 +160,6 @@ header .navLogo li a {
     font-family: Arial, sans-serif;
 }
 
-/* Estilo del botón */
 .new-comment .btn-comment {
     background-color: #355F2E;
     color: #FFFFFF;
@@ -237,52 +250,112 @@ header .navLogo li a {
     color: #777;
 }
 
-footer {    
-    background-color: #020202;
+footer{
+    background-color: #000000;
+    width: 100%;
+    padding: 5%;
+    columns: 4;
     color: white;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
 }
 
-footer .RedesSociales {
-    text-align: center;
+.iconos{
+    color: white;
 }
 
-footer .RedesSociales img {
-    width: 100px;
+.RedesSociales{
+    margin-bottom: 5em;
+}
+
+.RedesSociales img{
+    height: 120px;
+    width: 120px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
-footer .RedesSociales i {
-    margin: 0 10px;
-    color: white;
+
+.RedesSociales i{
+    margin-left: 10px;
     transition: all 0.3s;
 }
 
-footer .RedesSociales i:hover {
-    color: #F9C0AB;
+.RedesSociales i:hover{
+    transform: scale(1.1);
+    color: #FFB40F;
 }
 
-.navFooter ul {
+.navFooter{
+    margin-top: 40px;
+    margin-bottom: 7em;
+}
+
+.navFooter h3{
+    font-family: "Lobster Two", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.navFooter ul{
     list-style: none;
-    padding: 0;
+    margin-top: 20px;
 }
 
-.navFooter ul li {
-    margin-bottom: 10px;
+.navFooter ul a{
+    text-decoration: none;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+
 }
 
-.navFooter ul li:hover {
-    color: #F4E0AF;
+.navFooter ul a li{
+    margin-bottom: 12px;
+    transition: all 0.3s;   
 }
 
-.About {
+.navFooter ul a li:hover{
+    color: #FFB40F;
+}
+
+.About{
+    margin-top: 50px;
+    font-family: "Lobster Two", sans-serif;
+    font-style: normal;
+}
+
+.About i{
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.About article{
+    margin-left: -150px;
     text-align: center;
 }
 
-.About h3 {
+.About article h4{
+    color: white;
+}
+
+.About h3{
+    font-size: 20px;
+}
+
+.About a{
+    margin-top: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
     color: #F9C0AB;
+    font-weight: bold;
+}
+
+.About a:hover{
+    color: #a8cd89;
+}
+
+.About p{
+    margin-bottom: 10px;
 }
