@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a8cd89;
+    transition: background-color 0.3s ease;
+}
+
+body:hover {
+    background-color: #441752;
+}
+
+.card {
+    box-shadow: #0000 0px 0px 50px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #ffff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-header {
+    height: 350px;
+    background-image:url("../img/enchiladas.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    transition: filter 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.card-header::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 133, 2, 0.551);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card-header:hover::before {
+    opacity: 1;
+}
+
+.card-header:hover {
+    filter: brightness(0.7) ;
+}
+
+
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card-title-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-family: "Playwrite HU", cursive;
+    margin: 0;
+    color: #441752;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.title:hover {
+    color: white;
+    background-color: rgba(255, 133, 2, 0.551);
+}
+
+.price {
+    font-size: 20px;
+    background-color: rgba(255, 133, 2, 0.551);
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.description {
+    font-family: "Lobster Two", sans-serif;
+    color: #441752;
+    line-height: 40px;
+}
+
+.size-title {
+    margin-top: 20px;
+}
+
+.colors-title {
+    margin-top: 20px;
+}
