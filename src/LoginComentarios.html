@@ -17,14 +17,14 @@
             <img src="../img/LogoRestauranteNegro.png" width="150" height="150">
             </figure>
 
-            <form class="login-form" >
+            <form class="login-form" action="Comentarios.html" method="GET">
                 <label for="user-id">Usuario</label>
-                <input type="text" id="user-id" name="user-id" placeholder="Username">
+                <input type="text" id="user-id" name="user-id" placeholder="Username" required>
                 
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="password" id="password" name="password" placeholder="Password" required>
                 
-                <button class="btn-login" type="button" onclick="window.location.href='Comentarios.html'">Login</button>
+                <button class="btn-login" type="submit">Login</button>
             </form>
         </div>
     </div>
