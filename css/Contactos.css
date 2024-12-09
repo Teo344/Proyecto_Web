@@ -340,6 +340,22 @@ body {
     transition: background-color 0.5s;
 }
 
+body:has(#theme-toggle:checked) header{
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .navLogo a{
+    color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .navLogo li a:hover{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .btmListaComentarios{
+    background-color: #1B1833;
+    color: white;
+}
 
 body:has(#theme-toggle:checked) {
     background-color: #441753;
@@ -361,10 +377,6 @@ body:has(#theme-toggle:checked) th {
 
 body:has(#theme-toggle:checked) tr:hover {
     background-color: #c8a5d4;
-}
-body:has(#theme-toggle:checked) header{
-    background-color: #3405a3;
-    color: white;
 }
 
 body:has(#theme-toggle:checked) footer {
