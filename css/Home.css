@@ -104,7 +104,6 @@ body:has(#theme-toggle:checked) aside {
     color: white;
 }
 
-
 body:has(#theme-toggle:checked) .comentarios {
     background-color: #441752;
 }
@@ -519,7 +518,7 @@ footer{
 
 
 .RedesSociales i{
-    margin-left: 10px;
+    margin-left: 16px;
     transition: all 0.3s;
 }
 

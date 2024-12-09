@@ -69,6 +69,144 @@ input:checked + .slider:before {
     transform: translateX(14px);
 }
 
+body:has(#theme-toggle:checked) header{
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .navLogo a{
+    color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .navLogo li a:hover{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) aside {
+    background-color: #1B1833;
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .new-comment {
+    background-color: #1B1833;
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .btn-comment{
+    background-color: #f29f58;
+    color:white;
+}
+
+body:has(#theme-toggle:checked) .comment{
+    background-color: #1B1833;
+}
+
+body:has(#theme-toggle:checked) .comment-header{
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .comment-header .user-info{
+    color: black;
+}
+
+body:has(#theme-toggle:checked) .comment-header h3{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .comment-body h4{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .comment-header p{
+    color: #d45972;
+}
+
+body:has(#theme-toggle:checked) .like-dislike i:hover{
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+body:has(#theme-toggle:checked) .comment-footer p{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) footer{
+    background-color: #441752;
+}
+
+body:has(#theme-toggle:checked) .About article{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .RedesSociales i{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .RedesSociales i:hover{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .navFooter h3{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .navFooter a{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .navFooter a li:hover{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .About h3{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .About i{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .About article{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .About article h4{
+    color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .About article a{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .About article a:hover{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .chatbot {
+    background-color: #1b1833;
+}
+
+body:has(#theme-toggle:checked) .chatbot-header {
+    background-color: #f29f58;
+    color: #1b1833;
+}
+
+body:has(#theme-toggle:checked) .chatbot-body {
+    background-color: #1b1833;
+    color: #fff;
+}
+
+body:has(#theme-toggle:checked) .chatbot-footer {
+    background-color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .chatbot-footer button {
+    background-color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .chatbot-footer button:hover {
+    background-color: #ec2828;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -124,20 +262,6 @@ header .navLogo li a:hover {
     color: #FFB40F;
 }
 
-.btmListaComentarios {
-    background-color: #F9C0AB;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.btmListaComentarios:hover {
-    background-color: #F4E0AF;
-}
-
 .new-comment {
     max-width: 800px;
     margin: 20px auto;
@@ -158,30 +282,32 @@ header .navLogo li a:hover {
     border: 2px solid #355F2E;
     border-radius: 5px;
     font-size: 16px;
-
     font-family: Arial, sans-serif;
 }
 
 .new-comment .btn-comment {
-    background-color: #355F2E;
-    color: #FFFFFF;
+    margin-top: 5px;
+    color: #a8cd89;
     border: none;
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    height: 100%;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 16px;
+    background-color: #355F2E;
+    font-weight: bold;
+}
+
+.new-comment .btn-comment:hover {
+    background-image: linear-gradient(90deg, #3ab714 0%, #fef8f8 50%, #ec2828 75%, #3ab714 100%);
+    animation: slidernbw 5s linear infinite;
+    box-shadow: none;
+    color: #FFB40F;
 }
 
 .new-comment a{
     height: 50px;
-}
-
-.new-comment .btn-comment:hover {
-    background-color: #2E4D24;
-    transform: scale(1.04);
 }
 
 .comments-section {
@@ -192,7 +318,7 @@ header .navLogo li a:hover {
 }
 
 .comment {
-    background-color: #FFFFFF;
+    background-color: #355F2E;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -208,6 +334,7 @@ header .navLogo li a:hover {
 .comment-header .user-info {
     display: flex;
     align-items: center;
+    color:white;
 }
 
 .comment-header .user-info .avatar {
@@ -227,6 +354,30 @@ header .navLogo li a:hover {
     color: #777;
 }
 
+.criterio .stars i{
+    color: #FFD700;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.criterio .stars i:hover{
+    color: #FFA500;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.rating .stars i {
+    color: #FFD700;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.rating .stars i:hover {
+    color: #FFA500;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
 .comment-header .rating .stars {
     color: #F9C0AB;
     font-weight: bold;
@@ -239,24 +390,50 @@ header .navLogo li a:hover {
 }
 
 .comment-body h4 {
-    margin: 0;
-    color: #333;
+    margin-top: 10px;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .comment-body p {
-    color: #555;
+    color: #d3c1c1;
 }
 
 .comment-footer {
-    margin-top: 10px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 50px;
 }
 
 .comment-footer p {
-    color: #777;
+    color: #ffffff;
 }
+
+.like-dislike {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.like-dislike i {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #777;
+    transition: color 0.3s, transform 0.2s;
+    overflow: hidden;
+}
+
+.like-dislike i:hover {
+    color: #A8CD89; 
+    transform: scale(1.2);
+}
+
 
 footer{
     background-color: #000000;
@@ -282,7 +459,7 @@ footer{
 }
 
 .RedesSociales i{
-    margin-left: 10px;
+    margin-left: 16px;
     transition: all 0.3s;
     height: 80px;
 }
@@ -367,4 +544,80 @@ footer{
 
 .About p{
     margin-bottom: 10px;
+}
+
+/* Chatbot */
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f4e0af;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #a8cd89;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #355f2e;
+}
+
+.chatbot-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #355f2e;
+}
+
+.chatbot-header button:hover {
+    color: #f29f58;
+}
+
+.chatbot-body {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    height: 150px;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+.chatbot-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #a8cd89;
+}
+
+.chatbot-footer input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #355f2e;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chatbot-footer button {
+    margin-left: 10px;
+    background-color: #355f2e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.chatbot-footer button:hover {
+    background-color: #3ab714;
 }

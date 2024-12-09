@@ -273,7 +273,7 @@ body:has(#theme-toggle:checked) footer {
 }
 
 .RedesSociales i {
-    margin-left: 10px;
+    margin-left: 16px;
     transition: all 0.3s;
 }
 
