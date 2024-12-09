@@ -17,6 +17,8 @@ body:hover {
 }
 
 .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
     box-shadow: #0000 0px 0px 50px;
     margin: auto;
     margin-top: 50px;
@@ -67,6 +69,7 @@ body:hover {
     flex-direction: column;
     gap: 15px;
     width: 100%;
+    
 }
 
 .card-content {
@@ -75,6 +78,7 @@ body:hover {
 
 .card-title-price {
     display: flex;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -115,4 +119,16 @@ body:hover {
 
 .colors-title {
     margin-top: 20px;
+}
+.regresar {
+    background-color: rgba(255, 133, 2, 0.551);
+    font-family: "Playwrite HU", cursive;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 22px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
 }
