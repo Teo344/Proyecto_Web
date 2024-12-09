@@ -90,7 +90,7 @@ header .logo img {
 }
 
 header .logo img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 header nav {
@@ -115,7 +115,7 @@ header .navLogo li a {
 }
 
 header .navLogo li:hover {
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
 header .navLogo li a:hover {
@@ -277,6 +277,7 @@ footer{
 .RedesSociales i{
     margin-left: 10px;
     transition: all 0.3s;
+    height: 80px;
 }
 
 .RedesSociales i:hover{
@@ -329,6 +330,7 @@ footer{
     margin-left: 15%;
     margin-top: 10px;
     margin-bottom: 20px;
+    height: 100px;
 }
 
 .About article{
