@@ -166,16 +166,21 @@ header .navLogo li a:hover {
     background-color: #355F2E;
     color: #FFFFFF;
     border: none;
-    padding: 10px 20px;
+    width: 100px;
+    height: 30px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
+.new-comment a{
+    height: 50px;
+}
+
 .new-comment .btn-comment:hover {
     background-color: #2E4D24;
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .comments-section {
