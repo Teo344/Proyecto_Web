@@ -15,6 +15,7 @@ body {
 body:has(#theme-toggle:checked){
     background-color: #441752;
 }
+
 header {
     background-color: #F9C0AB;
     display: flex;
@@ -84,78 +85,83 @@ header {
     width: 300px;
     font-family: Arial, sans-serif;
     transition: transform 0.3s ease;
-  }
-  body:has(#theme-toggle:checked) .sidebar{
+}
+
+body:has(#theme-toggle:checked) .sidebar{
     color: #441752;
     background-color:#f29f58;
 }
 
-  .sidebar-header {
+.sidebar-header {
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 
-  .sidebar-header h2 {
+.sidebar-header h2 {
     font-size: 24px;
     font-family: "Edu AU VIC WA NT Arrows", cursive;
     color: #ffff;
-  }
-  body:has(#theme-toggle:checked) .sidebar-header h2{
+}
+
+body:has(#theme-toggle:checked) .sidebar-header h2{
     color: #441752;
 }
 
-  .sidebar-header p {
+.sidebar-header p {
     font-family: "Lobster Two", sans-serif;
     color: #fff;
     font-size: 14px;
-  }
-  body:has(#theme-toggle:checked) .sidebar-header p{
+}
+
+body:has(#theme-toggle:checked) .sidebar-header p{
     color: #441752;
 }
 
-  .filter-section h3 {
+.filter-section h3 {
     font-family: "Playwrite HU", cursive;
     font-size: 16px;
     color: #ffff;
-  }
-  body:has(#theme-toggle:checked)  .filter-section h3 {
+}
+
+body:has(#theme-toggle:checked)  .filter-section h3 {
     color: #441752;
 }
 
-  .filter-section input[type="text"],
-  .filter-section input[type="number"],
-  .filter-section input[type="range"],
-  .filter-section textarea {
+.filter-section input[type="text"],
+.filter-section input[type="number"],
+.filter-section input[type="range"],
+.filter-section textarea {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     font-family: "Lobster Two", sans-serif;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
+}
 
-  .filter-section label {
+.filter-section label {
     display: block;
     font-family: "Playwrite HU", cursive;
     font-size: 14px;
     color: #ffff;
     margin: 5px 0;
-  }
-  body:has(#theme-toggle:checked)  .filter-section label {
+}
+
+body:has(#theme-toggle:checked)  .filter-section label {
     color: #441752;
 }
 
-  .search-input {
+.search-input {
     font-size: 14px;
     font-family: "Lobster Two", sans-serif;
-  }
+}
 
-  .comments-input {
+.comments-input {
     height: 80px;
     resize: vertical;
-  }
+}
 
-  .order-button {
+.order-button {
     background-color: #2ecc71;
     color: white;
     font-family: "Lobster Two", sans-serif;
@@ -166,19 +172,20 @@ header {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-  }
+}
 
-  body:has(#theme-toggle:checked) .order-button{
+body:has(#theme-toggle:checked) .order-button{
     color: #ffff;
     background-color: #441752;
 }
+
 body:has(#theme-toggle:checked) .order-button{
     background-color:#9939b6;
 }
 
-  .order-button:hover {
+.order-button:hover {
     background-color: #219652;
-  }
+}
 
 .filter-section {
     margin-bottom: 20px;
@@ -206,6 +213,7 @@ body:has(#theme-toggle:checked) .order-button{
     width: 30%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 body:has(#theme-toggle:checked) .product-card{
     color: #441752;
     background-color:#f29f58;
@@ -240,14 +248,6 @@ body:has(#theme-toggle:checked) .product-card{
     color: #fff;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-}
-
 footer {
     background-color: #000000;
     width: 100%;
@@ -255,6 +255,7 @@ footer {
     columns: 4;
     color: white;
 }
+
 body:has(#theme-toggle:checked) footer {
     background-color: #dd36cf;
     color: black;
