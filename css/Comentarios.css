@@ -1,14 +1,26 @@
-body {
+*{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin-top: 90px;
+    padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url('../img/bgComentarios.jpg');
+    background-size: cover;
 }
 
 aside {
-    position: fixed;
     top: 10px;
-    left: 10px;
-    z-index: 10;
+    left: 20px;
+    background-color: #355F2E;
+    padding: 1px 3px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s;
+    color: #eff1ed;
 }
 
 .switch {
@@ -62,12 +74,17 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #F9C0AB;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
     height: 50px;
-    margin-left: 90px;
+    margin-left: 10px;
 }
 
 header nav {
@@ -86,13 +103,13 @@ header .navLogo {
 header .navLogo li a {
     text-decoration: none;
     color: #355F2E;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Playwrite HU', cursive;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .btmListaComentarios {
-    background-color: #F9C0AB; /* Rosa */
+    background-color: #F9C0AB;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -102,65 +119,55 @@ header .navLogo li a {
 }
 
 .btmListaComentarios:hover {
-    background-color: #F4E0AF; /* Amarillo claro */
+    background-color: #F4E0AF;
 }
 
-/* Footer */
-footer {
-    background-color: #020202; /* Verde claro */
-    color: white;
-    padding: 20px;
+.new-comment {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #F4E0AF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-footer .RedesSociales {
-    text-align: center;
+.new-comment textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #355F2E;
+    border-radius: 5px;
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
 }
 
-footer .RedesSociales img {
-    width: 100px;
-    margin-bottom: 10px;
+/* Estilo del botón */
+.new-comment .btn-comment {
+    background-color: #355F2E;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-footer .RedesSociales i {
-    margin: 0 10px;
-    color: white;
-    transition: all 0.3s;
+.new-comment .btn-comment:hover {
+    background-color: #2E4D24;
+    transform: scale(1.05);
 }
 
-footer .RedesSociales i:hover {
-    color: #F9C0AB; /* Rosa */
-}
-
-.navFooter ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navFooter ul li {
-    margin-bottom: 10px;
-}
-
-.navFooter ul li:hover {
-    color: #F4E0AF; /* Amarillo claro */
-}
-
-.About {
-    text-align: center;
-}
-
-.About h3 {
-    color: #F9C0AB; /* Rosa */
-}
-
-/* Comments Section */
 .comments-section {
     max-width: 100%;
     padding: 20px;
-    background-color: #F4E0AF;
+    background-image: url('../img/bgComentariosSeccion.jpg');
+    background-size: cover;
 }
 
 .comment {
@@ -200,7 +207,7 @@ footer .RedesSociales i:hover {
 }
 
 .comment-header .rating .stars {
-    color: #F9C0AB; /* Rosa */
+    color: #F9C0AB;
     font-weight: bold;
 }
 
@@ -230,6 +237,52 @@ footer .RedesSociales i:hover {
     color: #777;
 }
 
-html, body {
-    overflow-x: hidden;
+footer {    
+    background-color: #020202;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .RedesSociales {
+    text-align: center;
+}
+
+footer .RedesSociales img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .RedesSociales i {
+    margin: 0 10px;
+    color: white;
+    transition: all 0.3s;
+}
+
+footer .RedesSociales i:hover {
+    color: #F9C0AB;
+}
+
+.navFooter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navFooter ul li {
+    margin-bottom: 10px;
+}
+
+.navFooter ul li:hover {
+    color: #F4E0AF;
+}
+
+.About {
+    text-align: center;
+}
+
+.About h3 {
+    color: #F9C0AB;
 }
