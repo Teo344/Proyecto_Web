@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Playwrite+HU:wght@100..400&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+HU:wght@100..400&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <aside>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <p>Modo Oscuro</p>
+    </aside>
+
+    <!-- Header con el logo y el menú -->
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img src="../img/LogoRestauranteNegro.png" alt="LogoRestauranteNegro"></a>
+        </div>
+        <nav>
+            <ul class="navLogo">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="imageBanner"></div>
+        <div class="overlay"></div>
+        <section class="nombreBanner">
+            <h1> Bienvenidos</h1>
+            <h2>Cantina Chingona Carreta</h2>
+            <h3>"Restaurante mexicano"</h3>
+            <a href="Menu.html"><button class="btmBanner">Ver Menu</button></a>
+        </section>
+    </div>
+
+    <section class="comentarios">
+        <h3> Reseñas de nuestros clientes</h3>
+        <h4><em>"Opiniones reales, experiencias únicas"</em></h4>
+        <div class="listaComentarios">
+            <section class="comentarioTarjeta" id="tarjeta1">
+                <h3>"La comida es excepcionalmente deliciosa"</h3>
+                <div class="articulo">
+                    <div class="imageComentarios">
+                        <img src="../img/Kayla-Person.jpg" alt="Persona1">
+                    </div>
+                    <article class="textoComentarios">
+                        <h5>De: Maria Alvarez</h5>
+                        <p>
+                            Los sabores son auténticos y reflejan una cocina mexicana bien hecha.
+                            Probé los tacos al pastor, y la carne estaba
+                            perfectamente marinada, con un toque de piña que
+                            equilibraba el sabor salado y dulce. Además, las
+                            salsas caseras tienen una intensidad y frescura que
+                            complementan perfectamente cada bocado.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="comentarioTarjeta" id="tarjeta2">
+                <h3>"Las porciones son generosas"</h3>
+                <div class="articulo">
+                    <div class="imageComentarios">
+                        <img
+                            src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D">
+                    </div>
+                    <article class="textoComentarios">
+                        <h5>De: Pedro Marcillo</h5>
+                        <p>
+                            Ordené una enchilada de mole poblano, y quedé
+                            sorprendido no solo por el sabor complejo del mole,
+                            sino también por el tamaño del plato. Viene acompañado
+                            de arroz y frijoles bien preparados,
+                            lo que lo convierte en una comida completa
+                            y satisfactoria.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="comentarioTarjeta" id="tarjeta3">
+                <h3>"El menú tiene opciones para todos"</h3>
+                <div class="articulo">
+                    <div class="imageComentarios">
+                        <img src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp">
+                    </div>
+                    <article class="textoComentarios">
+                        <h5>Nombre del cliente</h5>
+                        <p>
+                            Es impresionante cómo logran ofrecer alternativas para diferentes
+                            dietas sin perder el toque auténtico. Por ejemplo,
+                            los tacos de hongos al ajillo son una delicia para los
+                            vegetarianos, y las tortillas sin gluten son una excelente
+                            opción para quienes tienen restricciones alimenticias.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div class="coment">
+            <a href="LoginComentarios.html"><button class="btmListaComentarios">Comentar</button></a>
+        </div>
+    </section>
+
+    <div class="historia">
+        <div class="imageHistoria"></div>
+        <section class="textHistoria">
+            <h3>Historia</h3>
+            <h4>El Sabor que Cuenta Historias: La Magia de la Comida Mexicana</h4>
+            <p><em>
+                    La gastronomía mexicana es más que deliciosa;
+                    es una celebración de tradiciones.
+                    Es sentarse a la mesa y viajar en el tiempo
+                    con un taco al pastor o sentir el calor del
+                    maíz recién nixtamalizado al saborear una
+                    tortilla hecha a mano. Desde el pozole que
+                    unía a las comunidades prehispánicas
+                    hasta los churros que llegaron con la
+                    influencia española, cada plato cuenta
+                    una historia única que conecta
+                    generaciones y culturas.
+                </em>
+            </p>
+            <a href="Historia.html"><button class="btmListaComentarios">Conocer Más</button></a>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <div class="RedesSociales">
+            <img src="../img/LogoRestauranteBlanco.png" alt="LogoRestauranteNegro">
+            <br>
+            <a href="https://www.tiktok.com/@la.carreta.2.0?is_from_webapp=1&sender_device=pc"><i
+                    class="fa-brands fa-tiktok fa-2x iconos"></i></a>
+            <a href="https://www.facebook.com/people/Cantina-Chingona-Carreta/61560608241454/?mibextid=kFxxJD"><i
+                    class="fa-brands fa-square-facebook fa-2x iconos"></i></a>
+            <a
+                href="https://www.instagram.com/cantinacarreta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==    "><i
+                    class="fa-brands fa-instagram fa-2x iconos"></i></a>
+        </div>
+        <section class="navFooter">
+            <h3>Navegacion</h3>
+            <ul>
+                <a href="Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="Historia.html">
+                    <li>Historia</li>
+                </a>
+                <a href="Menu.html">
+                    <li>Menu</li>
+                </a>
+                <a href="Contactos.html">
+                    <li>Contactos</li>
+                </a>
+            </ul>
+        </section>
+
+        <section class="navFooter">
+            <h3>Menu del Restaurante</h3>
+            <ul>
+                <a href="Plato1.html">
+                    <li>Plato 1</li>
+                </a>
+                <a href="Plato2.html">
+                    <li>Plato 2</li>
+                </a>
+                <a href="Plato3.html">
+                    <li>Plato 3</li>
+                </a>
+            </ul>
+
+        </section>
+
+        <section class="About">
+            <h3>Equipo Desarrollador</h3>
+            <i class="fa-solid fa-bug fa-5x"></i>
+            <article>
+                <h4>InterByte</h4>
+                <p>CopyRigth @2024</p>
+                <a href="About.html">Conocernos mas</a>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>

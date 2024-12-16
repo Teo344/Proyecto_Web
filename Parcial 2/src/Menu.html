@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante-Menu</title>
+  <link rel="stylesheet" href="../css/Menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@700&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Playwrite+HU:wght@100..400&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+HU:wght@100..400&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="dark-mode">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <p>Modo Oscuro</p>
+    </aside>
+    <header>
+        <div class="logo">
+            <a href="Home.html"><img src="../img/LogoRestauranteNegro.png" alt="LogoRestauranteNegro"></a>
+        </div>
+
+        <nav>
+            <ul class="navLogo">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <a href="LoginComentarios.html"><button class="btmListaComentarios">Comentar</button></a>
+    </header>
+
+  <main class="main">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Pedido a Domicilio</h2>
+          <p>¡Haz tu pedido fácilmente!</p>
+        </div>
+      
+        <div class="filter-section">
+          <h3>Buscar Producto:</h3>
+          <input type="text" placeholder="Buscar por nombre o categoría..." class="search-input">
+        </div>
+      
+        <div class="filter-section">
+          <h3>Cantidad:</h3>
+          <input type="number" min="1" placeholder="Cantidad" class="quantity-input">
+        </div>
+      
+        <div class="filter-section">
+          <h3>Dirección de Envío:</h3>
+          <input type="text" placeholder="Ingresa tu dirección" class="address-input">
+        </div>
+      
+        <div class="filter-section">
+          <h3>Opciones de Pago:</h3>
+          <label><input type="radio" name="payment" value="efectivo"> Efectivo</label>
+          <label><input type="radio" name="payment" value="tarjeta"> Tarjeta de Crédito</label>
+          <label><input type="radio" name="payment" value="transferencia"> Transferencia Bancaria</label>
+        </div>
+      
+        <div class="filter-section">
+          <h3>Comentarios:</h3>
+          <textarea placeholder="Deja algún comentario sobre tu pedido" class="comments-input"></textarea>
+        </div>
+      
+        <div class="filter-section">
+          <button class="order-button">Realizar Pedido</button>
+        </div>
+      </aside>
+
+    <section class="product-area">
+        <div class="product-row">
+          <div class="product-card">
+            <div class="product-image">
+                <a href="Plato1.html">
+                <img src="../img/flautas.jpg" alt="flautas">
+            </a>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Flautas</p>
+              <p class="product-price">$9.99</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <a href="Plato2.html">
+                <img src="../img/tacos.jpeg" alt="tacos">
+            </a>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Tacos</p>
+              <p class="product-price">$8.99</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <a href="Plato3.html">
+                <img src="../img/enchiladas.jpg" alt="enchiladas">
+            </a>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Enchiladas</p>
+              <p class="product-price">$7.99</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="RedesSociales">
+        <img src="../img/LogoRestauranteBlanco.png" alt="LogoRestauranteNegro">
+        <br>
+        <a href="https://www.tiktok.com/@la.carreta.2.0?is_from_webapp=1&sender_device=pc"><i
+                class="fa-brands fa-tiktok fa-2x iconos"></i></a>
+        <a href="https://www.facebook.com/people/Cantina-Chingona-Carreta/61560608241454/?mibextid=kFxxJD"><i
+                class="fa-brands fa-square-facebook fa-2x iconos"></i></a>
+        <a
+            href="https://www.instagram.com/cantinacarreta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==    "><i
+                class="fa-brands fa-instagram fa-2x iconos"></i></a>
+    </div>
+    <section class="navFooter">
+        <h3>Navegacion</h3>
+        <ul>
+            <a href="Home.html">
+                <li>Home</li>
+            </a>
+            <a href="Historia.html">
+                <li>Historia</li>
+            </a>
+            <a href="Menu.html">
+                <li>Menu</li>
+            </a>
+            <a href="Contactos.html">
+                <li>Contactos</li>
+            </a>
+        </ul>
+    </section>
+
+    <section class="navFooter">
+        <h3>Menu del Restaurante</h3>
+        <ul>
+            <a href="Plato1.html">
+                <li>Plato 1</li>
+            </a>
+            <a href="Plato2.html">
+                <li>Plato 2</li>
+            </a>
+            <a href="Plato3.html">
+                <li>Plato 3</li>
+            </a>
+        </ul>
+
+    </section>
+
+    <section class="About">
+        <h3>Equipo Desarrollador</h3>
+        <i class="fa-solid fa-bug fa-5x"></i>
+        <article>
+            <h4>InterByte</h4>
+            <p>CopyRigth @2024</p>
+            <a href="About.html">Conocernos mas</a>
+        </article>
+    </section>
+</footer>
+</body>
+</html>

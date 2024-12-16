@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/FondoAbout.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.bannerPrincipal{
+    background-image: url(../img/BannerAbout.jpeg);
+    background-size: cover; /* Ajustar imagen al tamaño del banner */
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.textoBanner{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-40%, -120%);
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600px;
+    font-style: normal;
+    text-align: center;
+    background: rgba(53, 95, 46, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.textoBanner h1 {
+    font-size: 2rem;
+    margin: 0;
+
+}
+
+.textoBanner h2 {
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+}
+
+.tarjetas{
+    display: flex; 
+    position: absolute;
+    gap: 60px; 
+    margin-top: -90px;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+.card {
+    width: 400px;
+    height: 600px;
+    background: #f9c0ab;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+}
+   
+.card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #f4e0af;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+}
+   
+.card span {
+    font-weight: 600;
+    color: #355f35;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:"ROND" 0;
+
+}
+   
+.card .job {
+    font-weight: 400;
+    color: #355f35;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+   
+.card .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.card p{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card ol{
+    padding: 0px 60px;
+}
+
+.card .person1{
+    background-image: url(https://avatars.githubusercontent.com/u/99379514?v=4);
+}
+
+.card .person2{
+    background-image: url(https://avatars.githubusercontent.com/u/75965352?s=64&v=4);
+}
+.card .person3{
+    background-image: url(https://avatars.githubusercontent.com/u/139073605?v=4);
+}
+
+   
+.card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #355f35;
+    color: white;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card ol a li:hover {
+    color: #355f35;
+}
+   
+.card button:hover {
+    background: #534bf3;
+}
+
+.acercaEquipo {
+    background-color: black;
+    background-image: url(../img/FondoAbout.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.acercaExplicacion{
+    background-color: #f4e0af;
+    height: 400px;
+    width: 600px;
+    margin-top: 220px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.acercaExplicacion i{
+    margin-bottom: 20px;
+    animation: colors 2s linear infinite ;
+}
+
+.card ol a{
+    text-decoration: none;
+}
+
+.card ol li{
+    margin-bottom: 7px;
+    color: black;
+}
+
+@keyframes colors {
+    0%{
+        color: black;
+    }
+    25%{
+        color: #3405a3;
+    }
+    50%{
+        color: aliceblue;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: black;
+    }
+}
+
+.acercaExplicacion p{
+    padding: 30px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.acercaExplicacion h2{
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.herramientas{
+    width: 80%;
+    height: 450px;
+    margin-top: 50px;
+    text-align: center;
+    color: #f4e0af;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.iconosHerramientas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center; 
+    align-items: center;
+    padding: 50px;
+}
+
+.iconosHerramientas i {
+    font-size: 6rem; 
+    animation: colors 6s linear infinite ;
+}
+
+body:has(#theme-toggle:checked) .textoBanner {
+    background-color: #441752;
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .card {
+    background-color: #ab4459;
+}
+
+body:has(#theme-toggle:checked) .card .card-border-top{
+    background-color: #441752;
+}
+
+body:has(#theme-toggle:checked) .card span{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .card .job{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .card p{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .card ol a li{
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .card button{
+    background-color: #441752;
+    color: #f29f58;
+}
+
+body:has(#theme-toggle:checked) .card button:hover{
+    background-color: white;
+}
+
+body:has(#theme-toggle:checked) .acercaExplicacion{
+    background-color: #f29f58;
+    color: #441752;
+}
+
+body:has(#theme-toggle:checked) .herramientas h2{
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .card ol a li:hover{
+    color: white;
+}
+
+
+
